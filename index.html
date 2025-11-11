@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dark Flowers — Магазин</title>
+    <link rel="stylesheet" a href="index.css" />
+    <link rel="icon" href="https://avatars.mds.yandex.net/i?id=a44eda1d5fde0d0a634de8a935bc6b95ab13ecf5-5361454-images-thumbs&n=13" type="image/svg+xml">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <img src="https://avatars.mds.yandex.net/i?id=a44eda1d5fde0d0a634de8a935bc6b95ab13ecf5-5361454-images-thumbs&n=13" alt="Логотип Dark Flowers" class="logo-img" height="35px" width="35px" style="position: relative; border-radius: 10px;left:47px;">
+        <span class="mark"></span><span>Dark Flowers</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button
+          class="cart-btn"
+          id="openCartBtn"
+          title="Открыть корзину (на странице)"
+        >
+          Корзина <span id="cartCounter" class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Dark Flowers — Уникальная флористика</h1>
+          <p style="text-align: center;">
+            Элегантные букеты. Премиум-упаковка,
+            бережная доставка.
+          </p>
+        </div>
+        <div class="hero-right">
+          <!-- Место для баннера или promo -->
+        </div>
+      </section>
+
+      <section id="catalog" class="products" aria-live="polite">
+        <!-- Пример карточек !-->
+        <article
+          class="product"
+          data-id="p-002"
+          data-title="Букет 'Из ромашек'"
+          data-price="8990"
+          data-img="https://cvetland.kz/wp-content/uploads/2025/06/d53dd075-2b21-4d27-ae3a-d04b7e302afb-e1751003210125-300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2025/06/d53dd075-2b21-4d27-ae3a-d04b7e302afb-e1751003210125-300x300.jpg.webp"
+            alt="Букет Тьма и Бордо"
+          />
+          <div>
+            <div class="title">Букет 'Из ромашек'</div>
+            <p class="desc">
+              Отборные полевые ромашки.
+            </p>
+          </div>
+          <div class="meta">
+            <div class="price-row">
+              <div class="price">8 990 ₸</div>
+            </div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="product"
+          data-id="p-002"
+          data-title="Букет 'Тьма и Бордо'"
+          data-price="8990"
+          data-img="https://cvetland.kz/wp-content/uploads/2025/03/037a1acc-6179-4c66-a6ec-48041dbd0aa4-300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2025/03/037a1acc-6179-4c66-a6ec-48041dbd0aa4-300x300.jpg.webp"
+            alt="Букет Тьма и Бордо"
+          />
+          <div>
+            <div class="title">Букет 'Семицвет'</div>
+            <p class="desc">
+              Состав:Белые розы, эвкалипт.
+            </p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">8 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="product"
+          data-id="p-003"
+          data-title="Темный букет 'Ноктюрн'"
+          data-price="12990"
+          data-img="https://cvetland.kz/wp-content/uploads/2025/11/a547b2a6-98e9-41ca-bc15-28b8c145c5a8-e1762346459676-300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2025/11/a547b2a6-98e9-41ca-bc15-28b8c145c5a8-e1762346459676-300x300.jpg.webp"
+            alt="Букет Ноктюрн"
+          />
+          <div>
+            <div class="title">Букет 'Северное сиянине'</div>
+            <p class="desc">Состав:Белые розы с нежными лилиями</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">12 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+        <article
+          class="product"
+          data-id="p-004"
+          data-title="Готическая орхидея"
+          data-price="15990"
+          data-img="https://cvetland.kz/wp-content/uploads/2025/04/55-000--300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2025/04/55-000--300x300.jpg.webp"
+            alt="Готическая орхидея"
+          />
+          <div>
+            <div class="title">Букет 'Красно-белое'</div>
+            <p class="desc">Состав:Гортензии с белые розами.</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">15 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+        <article
+          class="product"
+          data-id="p-005"
+          data-title="Готическая орхидея"
+          data-price="15990"
+          data-img="https://cvetland.kz/wp-content/uploads/2021/06/45-500--300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2021/06/45-500--300x300.jpg.webp"
+            alt="Готическая орхидея"
+          />
+          <div>
+            <div class="title">Букет 'Нежная встреча'</div>
+            <p class="desc">Cостав:Большой букет из роз и лилий.</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">15 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="product"
+          data-id="p-006"
+          data-title="Готическая орхидея"
+          data-price="15990"
+          data-img="https://cvetland.kz/wp-content/uploads/2025/06/be88b371-ef8b-40c4-a394-58aec0159cf1-300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2025/06/be88b371-ef8b-40c4-a394-58aec0159cf1-300x300.jpg.webp"
+            alt="Готическая орхидея"
+          />
+          <div>
+            <div class="title">Букет 'Летняя нежность'</div>
+            <p class="desc">Состав: Большой букет из ромашек.</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">15 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="product"
+          data-id="p-007"
+          data-title="Готическая орхидея"
+          data-price="15990"
+          data-img="https://cvetland.kz/wp-content/uploads/2025/02/1c48f175-8f1c-4cc4-9260-064758ff9aec-300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2025/02/1c48f175-8f1c-4cc4-9260-064758ff9aec-300x300.jpg.webp"
+            alt="Готическая орхидея"
+          />
+          <div>
+            <div class="title">Букет 'Ясная поляна'</div>
+            <p class="desc">Cостав:Букет из 51 тюльпана.</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">15 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+        <article
+          class="product"
+          data-id="p-008"
+          data-title="Готическая орхидея"
+          data-price="15990"
+          data-img="https://cvetland.kz/wp-content/uploads/2024/02/859d9a25-f28c-49ea-9e75-e7f358353744-300x300.jpg"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2024/02/859d9a25-f28c-49ea-9e75-e7f358353744-300x300.jpg"
+            alt="Готическая орхидея"
+          />
+          <div>
+            <div class="title">Букет 'Приятный подарок'</div>
+            <p class="desc">Состав:Микс из гербер.</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">15 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+        <article
+          class="product"
+          data-id="p-009"
+          data-title="Готическая орхидея"
+          data-price="15990"
+          data-img="https://cvetland.kz/wp-content/uploads/2022/06/b0a05743-0eac-4ef5-bdf1-eb6c33c54791-e1755779695113-300x300.jpg.webp"
+        >
+          <img
+            src="https://cvetland.kz/wp-content/uploads/2022/06/b0a05743-0eac-4ef5-bdf1-eb6c33c54791-e1755779695113-300x300.jpg.webp"
+            alt="Готическая орхидея"
+          />
+          <div>
+            <div class="title">Букет 'Нежность'</div>
+            <p class="desc">Состав:Пышные герберы.</p>
+          </div>
+          <div class="meta">
+            <div class="price-row"><div class="price">15 990 ₸</div></div>
+            <div style="margin-left: 12px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnNi8I1wI3vAsdDd9GukjXqOTLhqckH5g2Q&s"
+                alt="Добавить в корзину"
+                class="add-btn-img"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <div class="footer-container">
+        <div class="footer-left">
+          <strong><h1 style="text-align: center; left: 93vh ; position: absolute;">Dark Flowers</h1></strong>
+          <div class="footer-branches">
+            <p>Наши филиалы:</p>
+            <p>ул. Цветочная, 13</p>
+            <p>ул. Абая</p>
+            <p>ул. Байтурсынова</p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>Контакты:</p>
+          <p>+7 (777) 777-77-77</p>
+          <p>+7 (747) 777-77-77</p>
+          <P>+7 (888) 777-77-77</P>
+
+        </div>
+      </div>
+
+      <div class="map-block">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=76.9290%2C43.2480&amp;z=13&amp;mode=search&amp;text=ул.%20Абая%2C%20Алматы%3B%20ул.%20Байтурсынова%2C%20Алматы%3B%20ул.%20Аль-Фараби%2C%20Алматы"
+          width="100%"
+          height="300"
+          frameborder="0"
+          allowfullscreen
+          style="border-radius: 8px"
+        ></iframe>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
