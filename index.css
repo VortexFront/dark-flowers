@@ -170,6 +170,10 @@ main {
 .add-btn:focus {
   outline: 2px solid rgba(76, 175, 80, 0.2);
 }
+.add-btn img { display: block; }
+.demo-notice { color: #dfc6ce; line-height: 1.6; }
+.storage-notice { padding: 16px; color: #ffb6bc; }
+:where(button,a):focus-visible { outline: 3px solid #dfacbb; outline-offset: 4px; }
 .add-btn-img {
   cursor: pointer;
   height: 50px;
@@ -283,6 +287,8 @@ footer {
     width: 100%;
     margin-top: 10px;
   }
+  header > nav { order: 3; width: 100%; }
+  header { gap: 10px; }
   
   nav a {
     font-size: 13px;
