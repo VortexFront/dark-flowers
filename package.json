@@ -1,0 +1,17 @@
+{
+  "name": "dark-flowers-static-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static demonstration catalogue and local browser cart; no ordering backend",
+  "scripts": {
+    "check": "node --check cart-store.js && node --check index.js && node --check cart.js",
+    "test": "node --test tests/cart-store.test.cjs tests/markup.test.cjs",
+    "test:browser": "playwright test",
+    "serve": "node tests/server.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  },
+  "engines": { "node": ">=22" },
+  "author": "Максим Асатуров"
+}

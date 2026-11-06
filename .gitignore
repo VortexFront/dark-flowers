@@ -20,3 +20,11 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Local verification and private configuration
+node_modules/
+test-results/
+playwright-report/
+.env
+.env.*
+*.log
